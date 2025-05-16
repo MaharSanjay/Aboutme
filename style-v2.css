@@ -1,0 +1,90 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #FAF8F5; /* Very soft, off-white/pale cream */
+    color: #5A5A5A; /* Gentle, warm dark grey for text */
+    line-height: 1.75; /* Slightly increased for lighter feel */
+    margin: 0;
+    padding: 25px; /* Increased padding for more breathing room */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 680px; /* Slightly adjusted */
+    width: 100%;
+    padding: 30px; /* More padding inside the container */
+    background-color: #FCFBF7; /* Slightly different light cream for container, or transparent */
+    border-radius: 10px; /* Softer radius */
+    /* box-shadow: 0 3px 12px rgba(0, 0, 0, 0.04); Very subtle shadow */
+    border: 1px solid #EAE0D1; /* Very faint border matching a light gold/ochre tone */
+    text-align: center; /* Center align container children like image and lines */
+}
+
+.decorative-line-top,
+.decorative-line-bottom {
+    width: 100px; /* Width of the line element */
+    height: auto;
+    margin: 0 auto; /* Center the line element */
+}
+
+.decorative-line-top {
+    margin-bottom: 30px; /* Space below top line */
+    padding-top: 5px;
+    border-top: 1px solid #D4C2A4; /* Muted pale gold/light ochre */
+    border-bottom: 1px solid #D4C2A4;
+    height: 3px; /* Creates a double line effect with padding */
+}
+
+.decorative-line-bottom {
+    margin-top: 35px; /* Space above bottom line */
+    padding-bottom: 5px;
+    border-top: 1px solid #D4C2A4;
+    height: 0px; /* Single line */
+}
+
+
+.image-container {
+    text-align: center;
+    margin-bottom: 30px; /* Increased space */
+}
+
+.profile-pic {
+    width: 170px; /* Slightly adjusted size */
+    height: 170px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #FFFFFF; /* White border to lift from background */
+    box-shadow: 0 0 0 1px #D4C2A4, 0 4px 8px rgba(0, 0, 0, 0.07); /* Thin gold outer ring & subtle shadow */
+
+}
+
+.content p {
+    margin-bottom: 1.3em; /* Adjusted spacing */
+    font-size: 1.05em; /* Slightly larger font for readability */
+    text-align: left; /* Left align for readability in longer text */
+    color: #5A5A5A; /* Ensure text color is consistent */
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    body {
+        padding: 15px;
+    }
+    .container {
+        padding: 20px;
+    }
+    .profile-pic {
+        width: 140px;
+        height: 140px;
+    }
+    .content p {
+        font-size: 1em;
+    }
+    .decorative-line-top,
+    .decorative-line-bottom {
+        width: 80px;
+    }
+}
